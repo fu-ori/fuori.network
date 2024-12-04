@@ -4,7 +4,43 @@
 <head>
 	<!-- ENGINE -->
 	<title>Fuori Network.</title>
-	<?php include 'engine-libraries.php'; ?>
+
+	<!-- DEFAULTS -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="https://cdn.fcity.tech/images/favicon.png" type="image/png">
+
+	<!-- TAILWIND -->
+	<script src="https://cdn.tailwindcss.com"></script>
+
+	<!-- FANCYBOX -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+	<!-- SWIPER -->
+	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+	<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+	<!-- JQUERY -->
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+	<!-- SCROLL -->
+	<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$('a[href^="#"]').bind('click.smoothscroll',function (e) {
+				e.preventDefault();
+				var target = this.hash,
+				$target = $(target);
+
+				$('html, body').stop().animate( {
+					'scrollTop': $target.offset().top-0
+				}, 1200, function () {
+					window.location.hash = target;
+				} );
+			} );
+		} );
+	</script>
 	<style type="text/css">
 		.menu {
 			position: fixed;       
@@ -48,6 +84,16 @@
 						</li>
 						<li>
 							<a href="" class="bg-stone-500 hover:bg-stone-700 text-white text-sm py-1 px-2 rounded">Política de Privacidade</a>
+						</li>
+						<li><hr></li>
+						<li>
+							<a href="" class="bg-stone-500 hover:bg-stone-700 text-white text-sm py-1 px-2 rounded">Central de Ajuda</a>
+						</li>
+						<li>
+							<a href="" class="bg-stone-500 hover:bg-stone-700 text-white text-sm py-1 px-2 rounded">Como Comprar</a>
+						</li>
+						<li>
+							<a href="" class="bg-stone-500 hover:bg-stone-700 text-white text-sm py-1 px-2 rounded">Fale Conosco</a>
 						</li>
 						<li>
 							<a href="" class="bg-stone-500 hover:bg-stone-700 text-white text-sm py-1 px-2 rounded">Termos de Uso</a>
