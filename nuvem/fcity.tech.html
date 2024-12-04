@@ -52,6 +52,19 @@
 		.divider{
 			height: 30px;
 		}
+		@media (orientation: portrait) {
+			.menu{
+				position: initial;
+			}
+			ul{
+				display: flex;
+				flex-wrap: wrap;
+			}
+			ul li{
+				padding-right: 10px;
+				padding-bottom: 10px;
+			}
+		}
 	</style>
 </head>
 
@@ -60,7 +73,7 @@
 		<div class="container mx-auto flex justify-between items-center px-4">
 			<h1 class="text-2xl">FUORI NETWORK</h1>
 			<nav class="space-x-4">
-				<a href="index">Startup's Directory</a>
+				<a href="index.html">Startup's Directory</a>
 			</nav>
 		</div>
 	</header>
@@ -106,12 +119,12 @@
 			<div>
 				<div class="bg-white p-6 rounded shadow" id="terms">
 					<h3 class="font-bold text-xl mb-2" >Sobre</h3>
-					<?php include 'docs-fcity/about.php'; ?>
+					
 				</div>
 				<div class="divider"></div>
 				<div class="bg-white p-6 rounded shadow" id="terms">
 					<h3 class="font-bold text-xl mb-2" >Termos de Uso</h3>
-					<?php include 'docs-fcity/terms.php'; ?>
+					
 				</div>
 			</div>
 		</section>
