@@ -1,1 +1,1 @@
-# fuori.network
+# FU-ORI Network
